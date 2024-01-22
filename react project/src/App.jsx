@@ -1,10 +1,11 @@
+import Shyam from "./shyam"
 
 
 function App() {
 
 
   return (
-    <h1>Hii Shyam Sundar Singh</h1>
+    <Shyam/>
   )
 }
 
