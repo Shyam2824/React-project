@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-let currDate= new Date();
+let currDate= new Date(2024, 2, 5, 20);
 currDate=currDate.getHours();
 
 let changeTime=''
@@ -21,7 +21,7 @@ if(currDate>=1 && currDate<12){
 ReactDOM.render(
     <>
     <div>
-    <h1> Hello Sir , <span style={CssStyle}>{changeTime}</span></h1>
+    <h1> Hello Sir , <span style={CssStyle}>{changeTime}</span>  Shyam Sundar Singh</h1>
     </div>
     </>,
     document.getElementById('root')
