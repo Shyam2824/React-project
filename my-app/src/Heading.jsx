@@ -1,7 +1,14 @@
 import React from 'react';
-
+import './index.css';
  function Heading() {
     const css={};
+    // const styleCss={
+    //     fontSize: '20px',
+    // fontWeight: 'bold',
+    // backgroundColor:' brown',
+    // display: 'contents',
+    // padding: '20 20',
+    // };
     let currDate= new Date();
     currDate= currDate.getHours();
     let gettingTime='';
@@ -16,16 +23,18 @@ import React from 'react';
         css.color='orange'
     }
   return (
-    <div>
-      <h1 className='heading'>Hii, Here Shyam Sundar Singh <span style={css}> {gettingTime} </span></h1>
-      <p>There should be no issue </p>
+    <>
+    <div >
+      <h1 >Hii, Here Shyam Sundar Singh <span style={css}> {gettingTime} </span></h1>
+      <p >There should be no issue </p>
       <ol>
-        <li>good code</li>
+        <li >good code</li>
         <li>good mind</li>
         <li>good choice</li>
         <li>good work</li>
       </ol>
     </div>
+    </>
   )
 }
 export default Heading;

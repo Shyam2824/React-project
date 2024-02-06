@@ -1,11 +1,11 @@
-import React from 'react'
-import Heading from './Heading'
+import React from 'react';
 
 
 function App() {
   return (
     <div>
-      <Heading/>
+    {/* <Heading/> */}
+ 
     </div>
   )
 }
