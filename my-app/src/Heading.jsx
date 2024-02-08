@@ -2,13 +2,7 @@ import React from 'react';
 import './index.css';
  function Heading() {
     const css={};
-    // const styleCss={
-    //     fontSize: '20px',
-    // fontWeight: 'bold',
-    // backgroundColor:' brown',
-    // display: 'contents',
-    // padding: '20 20',
-    // };
+   
     let currDate= new Date();
     currDate= currDate.getHours();
     let gettingTime='';
