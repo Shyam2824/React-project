@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 
 
-const App=()=>{
+const Hook=()=>{
   //const count;
   //const state = useState();
 //console.log(state);
@@ -26,5 +26,5 @@ const DecNum= () =>{
   );
 }
 
-export default App;
+export default Hook;
 

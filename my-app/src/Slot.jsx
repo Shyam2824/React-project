@@ -23,7 +23,7 @@ const SlotM = () => {
  }
 }
 
-const App =() => {
+const SlotMachine =() => {
   return (
     <>
     <h1 style={{textAlign: 'center'}}> 🎰 Welcome to <span style={{fontWeight:"bold"}}>Slot Machine Game</span> 🎰</h1>
@@ -31,3 +31,4 @@ const App =() => {
     </>
   );
 }
+export default SlotMachine;
