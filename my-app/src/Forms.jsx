@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 
-const App=()=> {
+const Form=()=> {
   const [change, setChange]=useState()
   const [fullName, setfullName]= useState()
   const eventChanged=(event)=>{
@@ -22,4 +22,4 @@ const App=()=> {
   </>
  );
 };
-export default App;
+export default Form;
