@@ -2,22 +2,28 @@ import React, { useState } from 'react'
 
 
 const Form=()=> {
-  const [change, setChange]=useState()
-  const [fullName, setfullName]= useState()
-  const eventChanged=(event)=>{
+  const [name, setName]=useState("")
+  const [fullName, setFullName]= useState()
+  const onSubmits=(event)=>{
+    event.preventDefault();
+    setFullName(name)
+    
+  }
+  const inputEvent=(event)=>{
    console.log(event.target.value);
-   setChange(event.target.value)
-   setfullName()
+   setName(event.target.value);
   }
-  const onSubmit=()=>{
-    setfullName(change)
-  }
+ 
  return(
   <>
   <div>
+  <form onSubmit={onSubmits}>
+  <div>
     <h1 style={{color:'red', backgroundColor:"yellow"}}>Hello {fullName}</h1>
-    <input type='text' placeholder='Enter Your Name' onChange={eventChanged} value={change}/>
-    <button onClick={onSubmit}>Click Me 🥰</button>
+    <input type='text' placeholder='Enter Your Name' onChange={inputEvent} value={name}/>
+    <button type='submit'>Click Me 🥰</button>
+  </div>
+  </form>
   </div>
   </>
  );
